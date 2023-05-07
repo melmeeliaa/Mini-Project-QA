@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mini-Project-QA.iml" filepath="$PROJECT_DIR$/.idea/Mini-Project-QA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALTASHOP API AUTOMATION/alta.iml" filepath="$PROJECT_DIR$/ALTASHOP API AUTOMATION/alta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALTASHOP WEB AUTOMATION/alta (1).iml" filepath="$PROJECT_DIR$/ALTASHOP WEB AUTOMATION/alta (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ALTASHOP MOBILE AUTOMATION/altashop.iml" filepath="$PROJECT_DIR$/ALTASHOP MOBILE AUTOMATION/altashop.iml" />
+    </modules>
+  </component>
+</project>

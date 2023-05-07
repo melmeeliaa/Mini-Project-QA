@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/1. Login.feature",
+        features = "src/test/resources/features/2. Register.feature",
         stepNotifications = true
 )
 public class CucumberTestSuite {

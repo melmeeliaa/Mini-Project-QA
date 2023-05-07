@@ -41,6 +41,9 @@ public class RegisterScreen extends BasePageObject {
     private By notInputPassword() {
         return AppiumBy.xpath("//android.view.View[@content-desc=\"password can not empty\"]");
     }
+    private By buttonCart() {
+        return AppiumBy.xpath("//android.widget.Button[@content-desc=\"0\"]");
+    }
     //=============================================== Functional ======================================================
     @Step
     public void onHomepageAltaShop() {
@@ -81,5 +84,5 @@ public class RegisterScreen extends BasePageObject {
     }
     @Step
     public void onHomepageAltaShopAgain() {
-        Assert.assertTrue(waitUntilVisible(ButtonLogin()).isDisplayed());}
+        Assert.assertTrue(waitUntilVisible(buttonCart()).isDisplayed());}
 }

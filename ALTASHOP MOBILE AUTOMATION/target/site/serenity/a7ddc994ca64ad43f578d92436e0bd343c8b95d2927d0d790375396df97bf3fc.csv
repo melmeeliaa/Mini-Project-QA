@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"login","user tidak dapat login menggunakan akun yang belum terdaftar","ERROR","2023-05-06T10:01:17.6801406+07:00[Asia/Jakarta]","0.0","34.86"
+"Register","user tidak dapat register karena menggunakan email yang sudah terdaftar","SUCCESS","2023-05-07T18:12:56.2997031+07:00[Asia/Jakarta]","0.0","40.18"
+"Register","user tidak dapat register karena tidak mengisi field nama lengkap","SUCCESS","2023-05-07T18:13:37.0413033+07:00[Asia/Jakarta]","0.0","36.57"
