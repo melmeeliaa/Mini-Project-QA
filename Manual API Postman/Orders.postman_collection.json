@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "000212b8-276c-4860-be2e-809f1f18468e",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26373130",
+		"_collection_link": "https://www.postman.com/melmel30/workspace/altashop-api/collection/26373130-000212b8-276c-4860-be2e-809f1f18468e?action=share&creator=26373130&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create a new order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkltZWwiLCJFbWFpbCI6IkVSQUBnbWFpbC5jb20ifQ.zzW_gyMRs8yVgRy6uEFmH-eYVl_jVN5e9WhDtF64VSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"product_id\":11289,\r\n        \"quantity\":1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkltZWwiLCJFbWFpbCI6IkVSQUBnbWFpbC5jb20ifQ.zzW_gyMRs8yVgRy6uEFmH-eYVl_jVN5e9WhDtF64VSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get order by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkltZWwiLCJFbWFpbCI6IkVSQUBnbWFpbC5jb20ifQ.zzW_gyMRs8yVgRy6uEFmH-eYVl_jVN5e9WhDtF64VSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/orders/9445",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"orders",
+						"9445"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

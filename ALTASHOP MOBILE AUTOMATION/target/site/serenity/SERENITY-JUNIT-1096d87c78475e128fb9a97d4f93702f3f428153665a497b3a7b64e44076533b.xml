@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="login" skipped="0" tests="6" time="107.89" timestamp="2023-05-06 10:01:17"><testcase name="user tidak dapat login menggunakan akun yang belum terdaftar"><error message="Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc=&quot;Record not found.&quot;] (tried for 15 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.8.1', revision: '8ebccac989'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appium:app: C:\Dev\ALTASHOP MOBILE AUTO..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Dev\ALTASHOP MOBILE AUTO..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: d4d46599-2f4f-4592-b2dd-34fedc871b23" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Record not found."] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Dev\ALTASHOP MOBILE AUTO..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Dev\ALTASHOP MOBILE AUTO..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d4d46599-2f4f-4592-b2dd-34fedc871b23</error><system-err>Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Record not found."] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Dev\ALTASHOP MOBILE AUTO..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Dev\ALTASHOP MOBILE AUTO..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d4d46599-2f4f-4592-b2dd-34fedc871b23&#13;
+altashop@1.0-SNAPSHOT/test.automation.pageobject.BasePageObject.waitUntilVisible(BasePageObject.java:38)&#13;
+altashop@1.0-SNAPSHOT/starter.screen.LoginScreen.getRecordNotFound(LoginScreen.java:55)&#13;
+altashop@1.0-SNAPSHOT/starter.stepdefinitions.LoginSteps.userSeeErrorMessage(LoginSteps.java:23)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)&#13;
+</system-err></testcase><testcase name="user bisa login menggunakan data valid"/><testcase name="user tidak bisa login karena menggunakan password yang salah"/><testcase name="user tidak bisa login karena menggunakan email yang salah"/><testcase name="user tidak bisa login karena tidak menginput email di field email"/><testcase name="user tidak bisa login karena tidak menginput password di field password"/></testsuite>

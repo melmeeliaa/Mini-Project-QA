@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: starter.CucumberTestSuite
+-------------------------------------------------------------------------------
+Tests run: 37, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 121.546 s <<< FAILURE! - in starter.CucumberTestSuite
+user tidak dapat login menggunakan akun yang belum terdaftar.user see error message "Record not found"  Time elapsed: 15.104 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Record not found."] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Dev\ALTASHOP MOBILE AUTO..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Dev\ALTASHOP MOBILE AUTO..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d4d46599-2f4f-4592-b2dd-34fedc871b23
+
+login.user tidak dapat login menggunakan akun yang belum terdaftar  Time elapsed: 15.131 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Record not found."] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Dev\ALTASHOP MOBILE AUTO..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Dev\ALTASHOP MOBILE AUTO..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d4d46599-2f4f-4592-b2dd-34fedc871b23
+
+login.user tidak dapat login menggunakan akun yang belum terdaftar  Time elapsed: 15.253 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //android.view.View[@content-desc="Record not found."] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Dev\ALTASHOP MOBILE AUTO..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Dev\ALTASHOP MOBILE AUTO..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d4d46599-2f4f-4592-b2dd-34fedc871b23
+

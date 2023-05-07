@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "63003989-073b-4e70-92fb-c2384a103336",
+		"name": "Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26373130",
+		"_collection_link": "https://www.postman.com/melmel30/workspace/altashop-api/collection/26373130-63003989-073b-4e70-92fb-c2384a103336?action=share&creator=26373130&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function (){",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Lalala@mail.com\",\r\n    \"password\":\"123123\",\r\n    \"fullname\":\"Firstname Lastname\"\r\n}"
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ERA@gmail.com\",\r\n    \"password\":\"Ina\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Information",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 2000ms\", function (){",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkltZWwiLCJFbWFpbCI6IkVSQUBnbWFpbC5jb20ifQ.zzW_gyMRs8yVgRy6uEFmH-eYVl_jVN5e9WhDtF64VSk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://altashop-api.fly.dev/api/auth/info",
+					"protocol": "https",
+					"host": [
+						"altashop-api",
+						"fly",
+						"dev"
+					],
+					"path": [
+						"api",
+						"auth",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

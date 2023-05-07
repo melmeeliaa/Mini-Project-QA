@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Products","POST - As user I have be able to create a new product","FAILURE","2023-05-07T00:21:43.3477464+07:00[Asia/Jakarta]","0.0","0.43"
+"Products","DELETE - As user I have be able to delete a product","FAILURE","2023-05-07T00:21:44.9152084+07:00[Asia/Jakarta]","0.0","0.32"
+"Products","POST - As user I have be able to assign a product rating","FAILURE","2023-05-07T00:21:45.2680667+07:00[Asia/Jakarta]","0.0","0.62"
+"Products","POST - As user I have be able to create a comment for product","FAILURE","2023-05-07T00:21:46.224423+07:00[Asia/Jakarta]","0.0","0.54"
+"Orders","POST - As user I have be able to to create a new order","FAILURE","2023-05-07T00:21:47.1789782+07:00[Asia/Jakarta]","0.0","0.58"

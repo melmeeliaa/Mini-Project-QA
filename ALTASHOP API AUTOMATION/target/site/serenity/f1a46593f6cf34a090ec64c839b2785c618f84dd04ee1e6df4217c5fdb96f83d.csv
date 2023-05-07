@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Orders","GET - As user I have be able to get all orders","SUCCESS","2023-05-07T00:21:47.7860282+07:00[Asia/Jakarta]","0.0","1.75"
+"Orders","GET - As user I have be able to get order by ID","SUCCESS","2023-05-07T00:21:49.5679313+07:00[Asia/Jakarta]","0.0","0.72"
