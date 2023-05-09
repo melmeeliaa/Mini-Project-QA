@@ -1,20 +1,20 @@
 Feature: Authentication
 
-  @Register
-  Scenario: POST - As user I have be able to to get new user data from the register feature
-    Given I set register api endpoint
-    When I send register HTTP request
-    Then I received valid HTTP response code 201 for register
-    And I received valid data for register
-
-  @Login
+  @Authentication01-API-Positive
   Scenario: POST - As user I have be able to to get token data from the login feature
     Given I set login api endpoint
     When I send login HTTP request
     Then I received valid HTTP response code 201 for login
     And I received valid token data for login
 
-  @GetUserInformation
+  @Authentication02-API-Positive
+  Scenario: POST - As user I have be able to to get new user data from the register feature
+    Given I set register api endpoint
+    When I send register HTTP request
+    Then I received valid HTTP response code 201 for register
+    And I received valid data for register
+
+  @Authentication03-API-Positive
   Scenario: GET - As user I have be able to get user information
     Given I have endpoint auth for get user information
     When I send endpoint auth for get user information and get token

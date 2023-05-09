@@ -13,17 +13,17 @@ public class GetProductByID {
 
         return endpoint;
     }
-    @Step("I send get all products HTTP request")
+    @Step("I send get product by ID HTTP request")
     public void iSendHTTPRequest() {
 
         SerenityRest.given().get(iSetApiEndpoint());
     }
-    @Step("I received valid HTTP response code {int} for get all products")
+    @Step("I received valid HTTP response code {int} for get product by ID")
     public void iReceivedValidHTTPResponseCode() {
 
         restAssuredThat(response -> response.statusCode(200));
     }
-    @Step("I received valid data for detail products")
+    @Step("I received valid data for get product by ID")
     public void iReceivedValidData() {
         restAssuredThat(response -> response.body("data.Name", equalTo("Hp Vivo Y22")));
         restAssuredThat(response -> response.body("data.Description", equalTo("memiliki spesifikasi yang apik")));

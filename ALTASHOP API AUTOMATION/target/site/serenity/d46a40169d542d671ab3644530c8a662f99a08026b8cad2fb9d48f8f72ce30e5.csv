@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Product Categories","POST - As user I have be able to create a category","FAILURE","2023-05-10T00:35:53.2690243+07:00[Asia/Jakarta]","0.0","0.29"
+"Product Categories","GET - As user I have be able to get category by ID","SUCCESS","2023-05-10T00:35:53.5883027+07:00[Asia/Jakarta]","0.0","0.27"
+"Product Categories","GET - As user I have be able to get detail categories","SUCCESS","2023-05-10T00:35:53.8851699+07:00[Asia/Jakarta]","0.0","0.59"
+"Product Categories","DELETE - As user I have be able to delete a category","FAILURE","2023-05-10T00:35:54.4861405+07:00[Asia/Jakarta]","0.0","0.28"

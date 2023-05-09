@@ -1,34 +1,35 @@
 Feature: Products
 
-  @CreateANewProduct
-  Scenario: POST - As user I have be able to create a new product
-    Given I set create a new product api endpoint
-    When I send create a new product HTTP request
-    Then I received valid HTTP response code 201 for create a new product
-    And I received valid data for create a new product
-
-  @GetAllProducts
+  @Product01-API-Positive
   Scenario: GET - As user I have be able to get detail products
     Given I set get all products api endpoint
     When I send get all products HTTP request
     Then I received valid HTTP response code 200 for get all products
     And I received valid data for detail products
 
-  @GetProductByID
+  @Product02-API-Positive
+  Scenario: POST - As user I have be able to create a new product
+    Given I set create a new product api endpoint
+    When I send create a new product HTTP request
+    Then I received valid HTTP response code 201 for create a new product
+    And I received valid data for create a new product
+
+
+  @Product03-API-Positive
   Scenario: GET - As user I have be able to get a product by ID
     Given I set get product by ID api endpoint
     When I send get product by ID HTTP request
     Then I received valid HTTP response code 200 for get product by ID
     And I received valid data for get product by ID
 
-  @DeleteAProduct
+  @Product04-API-Positive
   Scenario: DELETE - As user I have be able to delete a product
     Given I set delete a product api endpoint
     When I send delete a product HTTP request
     Then I received valid HTTP response code 204 for delete a product
     And I received valid data for delete a product
 
-  @AssignAProductRating
+  @Product05-API-Positive
   Scenario: POST - As user I have be able to assign a product rating
     Given I have endpoint auth for assign a product rating
     When I send endpoint auth for assign a product rating and get token
@@ -37,14 +38,14 @@ Feature: Products
     Then I received valid HTTP response code 201 for assign a product rating
     And I received valid data for assign a product rating
 
-  @GetProductRatings
+  @Product06-API-Positive
   Scenario: GET - As user I have be able to get product ratings
     Given I set get product ratings api endpoint
     When I send get product ratings HTTP request
     Then I received valid HTTP response code 200 for get product ratings
     And I received valid data for get product ratings
 
-  @CreateACommentForProduct
+  @Product07-API-Positive
   Scenario: POST - As user I have be able to create a comment for product
     Given I have endpoint auth for create a comment for product
     When I send endpoint auth create a comment for product
@@ -53,7 +54,7 @@ Feature: Products
     And I received valid HTTP response code 201 for create a comment for product
     Then I received valid data for create a comment for product
 
-  @GetProductComments
+  @Product08-API-Positive
   Scenario: GET - As user I have be able to get product comments
     Given I set get product comments api endpoint
     When I send get product comments HTTP request

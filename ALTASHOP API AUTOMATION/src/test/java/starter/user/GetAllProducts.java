@@ -25,7 +25,7 @@ public class GetAllProducts {
     }
     @Step("I received valid data for detail products")
     public void iReceivedValidDataForDetailUser() {
-        restAssuredThat(response -> response.body("data[0].Name", equalTo("XBox 1")));
+        restAssuredThat(response -> response.body("data[0].Name", equalTo("description")));
 
     }
 }

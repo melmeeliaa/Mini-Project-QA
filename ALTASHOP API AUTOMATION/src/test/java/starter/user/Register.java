@@ -17,7 +17,7 @@ public class Register {
     @Step("I send register HTTP request")
     public void iSendPOSTHTTPRequest() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email","mel10@gmail.com");
+        requestBody.put("email","mel11@gmail.com");
         requestBody.put("password","Ina");
         requestBody.put("fullname","Firstname Lastname");
         SerenityRest.given().header("Content-Type", "application/JSON").body(requestBody.toString()).post(iSetPOSTApiEndpoints());
@@ -31,7 +31,7 @@ public class Register {
     @Step("I received valid data for register")
     public void iReceiveValidData() {
         restAssuredThat(response -> response.body("data.Fullname", equalTo("Firstname Lastname")));
-        restAssuredThat(response -> response.body("data.Email", equalTo("mel10@gmail.com")));
+        restAssuredThat(response -> response.body("data.Email", equalTo("mel11@gmail.com")));
         restAssuredThat(response -> response.body("data.Password", equalTo("Ina")));
     }
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Orders" skipped="0" tests="3" time="3.05" timestamp="2023-05-07 12:21:47"><testcase name="POST - As user I have be able to to create a new order"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Orders" skipped="0" tests="3" time="1.87" timestamp="2023-05-10 12:35:51"><testcase name="POST - As user I have be able to to create a new order"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
 Expected status code &lt;201&gt; but was &lt;200&gt;.
 </failure><system-err>1 expectation failed.
 Expected status code &lt;201&gt; but was &lt;200&gt;.

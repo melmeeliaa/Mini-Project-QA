@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Authentication","POST - As user I have be able to to get new user data from the register feature","FAILURE","2023-05-10T00:35:47.0672831+07:00[Asia/Jakarta]","0.0","0.25"
+"Authentication","GET - As user I have be able to get user information","SUCCESS","2023-05-10T00:35:47.380334+07:00[Asia/Jakarta]","0.0","0.72"

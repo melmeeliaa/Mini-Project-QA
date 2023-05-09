@@ -44,7 +44,7 @@ public class GetAllOrders {
     }
     @Step("I received valid data for get all orders")
     public void iReceivedValidData() {
-        restAssuredThat(response -> response.body("data[0].Product", equalTo("XBox 1")));
-        restAssuredThat(response -> response.body("data[0].Price", equalTo(499)));
+        restAssuredThat(response -> response.body("data[0].Product", equalTo("Hp Vivo Y22")));
+        restAssuredThat(response -> response.body("data[0].Price", equalTo(3000000)));
     }
 }
