@@ -1,21 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: starter.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 232.086 s <<< FAILURE! - in starter.CucumberTestSuite
-Transaksi.user bisa melakukan pencarian produk dari listdown categories  Time elapsed: 16.388 s  <<< ERROR!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [074ae795fb97feb7e8cafa7dfc7ebd0b, clickElement {id=5932ca3f-fcd9-4038-aec9-29aeecb6c72b}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50209/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (074ae795fb97feb7e8cafa7dfc7ebd0b)] -> xpath: /html/body/div[1]/div[1]/main/div/div/div[1]]
-Session ID: 074ae795fb97feb7e8cafa7dfc7ebd0b
+Tests run: 16, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 185.853 s <<< FAILURE! - in starter.CucumberTestSuite
+Transaksi.user bisa membayar produk yang diinginkan  Time elapsed: 15.475 s  <<< FAILURE!
+java.lang.AssertionError: Element should be visible
 
-Transaksi.user bisa melihat riwayat transaksi  Time elapsed: 15.851 s  <<< ERROR!
+Transaksi.user bisa melihat riwayat transaksi  Time elapsed: 17.424 s  <<< ERROR!
 net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
 Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: /html/body/div[1]/div[2]/div/div[1] to be enabled (tried for 5 second(s) with 100 milliseconds interval)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -25,7 +15,13 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2499f3e7adb3620ccc862a84f5915aaf, findElement {using=xpath, value=/html/body/div[1]/div[2]/div/div[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50238/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2499f3e7adb3620ccc862a84f5915aaf
+Command: [4974577a3f047554c2d0a36645d9e7da, findElement {using=xpath, value=/html/body/div[1]/div[2]/div/div[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60185/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4974577a3f047554c2d0a36645d9e7da
+
+Transaksi.user bisa Mengubah Jumlah Produk pada Keranjang Belanja  Time elapsed: 9.578 s  <<< FAILURE!
+java.lang.AssertionError: Element should be visible
+
+Transaksi.user bisa menghapus produk dari keranjang belanja  Time elapsed: 11.319 s  <<< FAILURE!
+java.lang.AssertionError: Element should be visible
 

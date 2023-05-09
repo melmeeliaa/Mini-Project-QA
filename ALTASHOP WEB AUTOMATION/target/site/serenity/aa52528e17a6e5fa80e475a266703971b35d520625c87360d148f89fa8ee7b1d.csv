@@ -1,4 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Transaksi","user bisa membayar produk yang diinginkan","SUCCESS","2023-05-08T10:03:27.6024998+07:00[Asia/Jakarta]","0.0","14.88"
-"Transaksi","user bisa Mengubah Jumlah Produk pada Keranjang Belanja","SUCCESS","2023-05-08T10:04:15.2292876+07:00[Asia/Jakarta]","0.0","14.18"
-"Transaksi","user bisa menghapus produk dari keranjang belanja","SUCCESS","2023-05-08T10:04:29.7283069+07:00[Asia/Jakarta]","0.0","13.83"
+"Transaksi","user bisa melakukan pencarian produk dari listdown categories","SUCCESS","2023-05-10T00:51:07.7447901+07:00[Asia/Jakarta]","0.0","16.03"

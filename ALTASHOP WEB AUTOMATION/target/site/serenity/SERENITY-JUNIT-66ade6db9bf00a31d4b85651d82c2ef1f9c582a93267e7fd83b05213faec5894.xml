@@ -1,24 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="1" name="Transaksi" skipped="0" tests="5" time="74.33" timestamp="2023-05-08 10:03:27"><testcase name="user bisa membayar produk yang diinginkan"/><testcase name="user bisa melakukan pencarian produk dari listdown categories"><error message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=112.0.5615.138)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [074ae795fb97feb7e8cafa7dfc7ebd0b, clickElement {id=5932ca3f-fcd9-4038-aec9-29aeecb6c72b}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50209/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (074ae795fb97feb7e8cafa7dfc7ebd0b)] -&gt; xpath: /html/body/div[1]/div[1]/main/div/div/div[1]]&#10;Session ID: 074ae795fb97feb7e8cafa7dfc7ebd0b" type="org.openqa.selenium.StaleElementReferenceException">stale element reference: element is not attached to the page document
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [074ae795fb97feb7e8cafa7dfc7ebd0b, clickElement {id=5932ca3f-fcd9-4038-aec9-29aeecb6c72b}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50209/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (074ae795fb97feb7e8cafa7dfc7ebd0b)] -&gt; xpath: /html/body/div[1]/div[1]/main/div/div/div[1]]
-Session ID: 074ae795fb97feb7e8cafa7dfc7ebd0b</error><system-err>stale element reference: element is not attached to the page document
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [074ae795fb97feb7e8cafa7dfc7ebd0b, clickElement {id=5932ca3f-fcd9-4038-aec9-29aeecb6c72b}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50209/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (074ae795fb97feb7e8cafa7dfc7ebd0b)] -&gt; xpath: /html/body/div[1]/div[1]/main/div/div/div[1]]
-Session ID: 074ae795fb97feb7e8cafa7dfc7ebd0b&#13;
-alta@1.0-SNAPSHOT/starter.pages.TransaksiPage.klikSelectCategories(TransaksiPage.java:114)&#13;
-alta@1.0-SNAPSHOT/starter.stepdefinitions.TransaksiSteps.userMemilihSalahSatuCategories(TransaksiSteps.java:48)&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="4" name="Transaksi" skipped="0" tests="5" time="68.58" timestamp="2023-05-10 12:50:52"><testcase name="user bisa membayar produk yang diinginkan"><failure message="Element should be visible" type="java.lang.AssertionError">Element should be visible</failure><system-err>Element should be visible&#13;
+alta@1.0-SNAPSHOT/starter.pages.TransaksiPage.diHomepageKembali(TransaksiPage.java:89)&#13;
+alta@1.0-SNAPSHOT/starter.stepdefinitions.TransaksiSteps.userKlikBeliPadaProdukYangDiinginkan(TransaksiSteps.java:23)&#13;
 io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
 io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
 io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
@@ -38,7 +20,7 @@ io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
 io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
-</system-err></testcase><testcase name="user bisa melihat riwayat transaksi"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+</system-err></testcase><testcase name="user bisa melakukan pencarian produk dari listdown categories"/><testcase name="user bisa melihat riwayat transaksi"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
 alta@1.0-SNAPSHOT/starter.pages.TransaksiPage.klikRiwayatTransaksi(TransaksiPage.java:126)&#13;
 alta@1.0-SNAPSHOT/starter.stepdefinitions.TransaksiSteps.userKlikTransaksi(TransaksiSteps.java:60)&#13;
 io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
@@ -60,4 +42,48 @@ io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
 io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
 io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
-</system-err></testcase><testcase name="user bisa Mengubah Jumlah Produk pada Keranjang Belanja"/><testcase name="user bisa menghapus produk dari keranjang belanja"/></testsuite>
+</system-err></testcase><testcase name="user bisa Mengubah Jumlah Produk pada Keranjang Belanja"><failure message="Element should be visible" type="java.lang.AssertionError">Element should be visible</failure><system-err>Element should be visible&#13;
+alta@1.0-SNAPSHOT/starter.pages.TransaksiPage.diHomepageKembali(TransaksiPage.java:89)&#13;
+alta@1.0-SNAPSHOT/starter.stepdefinitions.TransaksiSteps.userKlikBeliPadaProdukYangDiinginkan(TransaksiSteps.java:23)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
+</system-err></testcase><testcase name="user bisa menghapus produk dari keranjang belanja"><failure message="Element should be visible" type="java.lang.AssertionError">Element should be visible</failure><system-err>Element should be visible&#13;
+alta@1.0-SNAPSHOT/starter.pages.TransaksiPage.diHomepageKembali(TransaksiPage.java:89)&#13;
+alta@1.0-SNAPSHOT/starter.stepdefinitions.TransaksiSteps.userKlikBeliPadaProdukYangDiinginkan(TransaksiSteps.java:23)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
+</system-err></testcase></testsuite>

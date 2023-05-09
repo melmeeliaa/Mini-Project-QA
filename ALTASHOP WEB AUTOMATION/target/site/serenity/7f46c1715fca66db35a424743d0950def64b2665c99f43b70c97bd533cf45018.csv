@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"register","user tidak bisa register karena tidak input password","SUCCESS","2023-05-08T10:03:07.5595856+07:00[Asia/Jakarta]","0.0","9.81"
-"register","user bisa register","SUCCESS","2023-05-08T10:03:17.6621775+07:00[Asia/Jakarta]","0.0","9.57"
+"register","user tidak bisa register karena tidak input nama lengkap","SUCCESS","2023-05-10T00:50:15.4458004+07:00[Asia/Jakarta]","0.0","6.5"
+"register","user tidak bisa register karena tidak input email","SUCCESS","2023-05-10T00:50:22.2063844+07:00[Asia/Jakarta]","0.0","9.25"
+"register","user tidak bisa register karena tidak input password","SUCCESS","2023-05-10T00:50:31.6955952+07:00[Asia/Jakarta]","0.0","9.59"

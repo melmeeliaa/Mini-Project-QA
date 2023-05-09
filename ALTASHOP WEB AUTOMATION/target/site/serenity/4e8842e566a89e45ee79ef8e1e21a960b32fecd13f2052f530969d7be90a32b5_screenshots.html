@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 08-05-2023 10:04</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 10-05-2023 00:51</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">user bisa Mengubah Jumlah Produk pada Keranjang Belanja
+                                <span class="failing-color">user bisa Mengubah Jumlah Produk pada Keranjang Belanja
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -211,26 +211,53 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Element should be visible</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.TransaksiPage.diHomepageKembali(TransaksiPage.java:89)<br />starter.stepdefinitions.TransaksiSteps.userKlikBeliPadaProdukYangDiinginkan(TransaksiSteps.java:23)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource17588895979063179236.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="f5192530e05cb404d28257d53fcda2caea810e87ea3a99aca8c746b4c525f8f1.png" title=" Given user berada di Homepage AltaShop dan login akun" width="1366"/>
-                <img src="f5192530e05cb404d28257d53fcda2caea810e87ea3a99aca8c746b4c525f8f1.png" title=" Di homepage alta shop" width="1366"/>
+                <img src="0ba2a8d8fe1bf48969de568751678fdc8b08b6982e22bad5d3da8c0ba06102fe.png" title=" Given user berada di Homepage AltaShop dan login akun" width="1366"/>
+                <img src="0ba2a8d8fe1bf48969de568751678fdc8b08b6982e22bad5d3da8c0ba06102fe.png" title=" Di homepage alta shop" width="1366"/>
                 <img src="f035198f28bcaf95684f4b1a3b9e5d031fc0873bb044f55c4913aef571773aa0.png" title=" Klik button login" width="1366"/>
-                <img src="0b8e2995711b07005dea398ee9bdb9237cc59849f8a6b3e23280a5362a7ad410.png" title=" Input email: ERA@gmail.com" width="1366"/>
-                <img src="88e96c214cdc2e05bbfb30c4f309c2abd1d4ae357c405b3df7edd5ea3b7293ac.png" title=" Input password: Ina" width="1366"/>
-                <img src="cad552ed5d9aefa0f1572bd5106390efc2ced8c4c4914f28a2f9a38a5d7bb1ef.png" title=" Klik button login kedua" width="1366"/>
-                <img src="cad552ed5d9aefa0f1572bd5106390efc2ced8c4c4914f28a2f9a38a5d7bb1ef.png" title=" Given user berada di Homepage AltaShop dan login akun (completed)" width="1366"/>
-                <img src="460d7ead43fa1fe8ad55ee609e5b1333d92eeea0cef3a20e4b0e5e8acb346d51.png" title=" When user berada di homepage lalu klik beli pada produk yang diinginkan" width="1366"/>
-                <img src="460d7ead43fa1fe8ad55ee609e5b1333d92eeea0cef3a20e4b0e5e8acb346d51.png" title=" Di homepage kembali" width="1366"/>
-                <img src="87e2d91869bd76ae944076763c8b789c9f966d82c84562c89e420b0644036889.png" title=" Klik button beli" width="1366"/>
-                <img src="87e2d91869bd76ae944076763c8b789c9f966d82c84562c89e420b0644036889.png" title=" When user berada di homepage lalu klik beli pada produk yang diinginkan (completed)" width="1366"/>
-                <img src="87e2d91869bd76ae944076763c8b789c9f966d82c84562c89e420b0644036889.png" title=" And muncul notif pada cart" width="1366"/>
-                <img src="4c9bee4bc46da336128f8f5e241111223f7559ee079604387701a789b434aeb9.png" title=" And user klik cart" width="1366"/>
-                <img src="4c9bee4bc46da336128f8f5e241111223f7559ee079604387701a789b434aeb9.png" title=" Klik button cart" width="1366"/>
-                <img src="4c9bee4bc46da336128f8f5e241111223f7559ee079604387701a789b434aeb9.png" title=" And user klik cart (completed)" width="1366"/>
-                <img src="0797f6e7d4d3ad7fa6684d08e7a93e28ebc8e9c862eef892919c1f2d5c09c57b.png" title=" Then user klik tombol tambah" width="1366"/>
-                <img src="0797f6e7d4d3ad7fa6684d08e7a93e28ebc8e9c862eef892919c1f2d5c09c57b.png" title=" Klik tombol tambah" width="1366"/>
-                <img src="0797f6e7d4d3ad7fa6684d08e7a93e28ebc8e9c862eef892919c1f2d5c09c57b.png" title=" Then user klik tombol tambah (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="6c30689863113df1476fa6963dc6e2dc94f2c60a19ae4d04e7accc5818d63fc2.png" title=" Input email: ERA@gmail.com" width="1366"/>
+                <img src="e47a71f9457daf1662c628dab3e55576d60152162516b0f82d91630885e267a3.png" title=" Input password: Ina" width="1366"/>
+                <img src="348172a9ffff3dc692a10443152b9c0edcaee5484781efa197a7cf3af8a8b518.png" title=" Klik button login kedua" width="1366"/>
+                <img src="348172a9ffff3dc692a10443152b9c0edcaee5484781efa197a7cf3af8a8b518.png" title=" Given user berada di Homepage AltaShop dan login akun (completed)" width="1366"/>
+                <img src="51447f85531d2b54c4a3c96777f5fc36fdd9e83d11f97e70cc6aae58844dd441.png" title=" When user berada di homepage lalu klik beli pada produk yang diinginkan" width="1366"/>
+                <img src="51447f85531d2b54c4a3c96777f5fc36fdd9e83d11f97e70cc6aae58844dd441.png" title=" Di homepage kembali: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
