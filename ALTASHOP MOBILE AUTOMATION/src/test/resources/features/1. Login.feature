@@ -1,6 +1,6 @@
 Feature: login
 
-  @AS34-negative
+  @login-mobile-01
   Scenario: user tidak dapat login menggunakan akun yang belum terdaftar
     Given user on homepage AltaShop for login feature
     When user click login button for login feature
@@ -9,7 +9,7 @@ Feature: login
     Then user click login button again for login feature
     And user see error message "Record not found"
 
-  @AS35-positive
+  @login-mobile-02
     Scenario: user bisa login menggunakan data valid
     Given user on homepage AltaShop for login feature
     When user click login button for login feature
@@ -17,7 +17,7 @@ Feature: login
     And user input password valid for login feature
     Then user click login button again for login feature
 
-  @AS36-negative
+  @login-mobile-03
   Scenario: user tidak bisa login karena menggunakan password yang salah
     Given user on homepage AltaShop for login feature
     When user click login button for login feature
@@ -26,7 +26,7 @@ Feature: login
     Then user click login button again for login feature
     And user see error message password invalid "Email or Password Invalid"
 
-  @AS37-negative
+  @login-mobile-04
   Scenario: user tidak bisa login karena menggunakan email yang salah
     Given user on homepage AltaShop for login feature
     When user click login button for login feature
@@ -35,7 +35,7 @@ Feature: login
     Then user click login button again for login feature
     And user see error message email invalid "Email or Password Invalid"
 
-  @AS38-negative
+  @login-mobile-05
   Scenario: user tidak bisa login karena tidak menginput email di field email
     Given user on homepage AltaShop for login feature
     When user click login button for login feature
@@ -44,7 +44,7 @@ Feature: login
     Then user click login button again for login feature
     And user see error message email required "Email can not empty"
 
-  @AS39-negative
+  @login-mobile-06
   Scenario: user tidak bisa login karena tidak menginput password di field password
     Given user on homepage AltaShop for login feature
     When user click login button for login feature

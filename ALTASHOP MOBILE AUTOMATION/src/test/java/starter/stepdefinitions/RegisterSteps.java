@@ -46,7 +46,7 @@ public class RegisterSteps {
     }
 
     @And("user input email for register feature")
-    public void userInputEmailForRegisterFeature() { registerScreen.inputEmail("lagi1@gmail.com");
+    public void userInputEmailForRegisterFeature() { registerScreen.inputEmail("cobalagi7@gmail.com");
     }
 
     @And("user see error message fullname is required or can not empty")

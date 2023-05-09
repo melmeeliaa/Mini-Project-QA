@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="login" skipped="0" tests="6" time="132.66" timestamp="2023-05-09 10:17:29"><testcase name="user tidak dapat login menggunakan akun yang belum terdaftar"/><testcase name="user bisa login menggunakan data valid"/><testcase name="user tidak bisa login karena menggunakan password yang salah"/><testcase name="user tidak bisa login karena menggunakan email yang salah"/><testcase name="user tidak bisa login karena tidak menginput email di field email"/><testcase name="user tidak bisa login karena tidak menginput password di field password"><error message="Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.example.frontend_mobile' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.example.frontend_mobile.MainActivity' or 'com.example.frontend_mobile.com.example.frontend_mobile.MainActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting &#10;Host info: host: 'LAPTOP-3SCUQ2RD', ip: '192.168.1.9'&#10;Build info: version: '4.8.1', revision: '8ebccac989'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [null, newSession {capabilities=[{appium:app=C:\Users\HP\Downloads\Mini-Project-QA\ALTASHOP MOBILE AUTOMATION\app/app-release.apk, appium:automationName=UiAutomator2, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}}]&#10;Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}" type="org.openqa.selenium.SessionNotCreatedException">Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.example.frontend_mobile' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.example.frontend_mobile.MainActivity' or 'com.example.frontend_mobile.com.example.frontend_mobile.MainActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting 
+Host info: host: 'LAPTOP-3SCUQ2RD', ip: '192.168.1.9'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=C:\Users\HP\Downloads\Mini-Project-QA\ALTASHOP MOBILE AUTOMATION\app/app-release.apk, appium:automationName=UiAutomator2, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}</error><system-err>Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.example.frontend_mobile' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.example.frontend_mobile.MainActivity' or 'com.example.frontend_mobile.com.example.frontend_mobile.MainActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting 
+Host info: host: 'LAPTOP-3SCUQ2RD', ip: '192.168.1.9'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=C:\Users\HP\Downloads\Mini-Project-QA\ALTASHOP MOBILE AUTOMATION\app/app-release.apk, appium:automationName=UiAutomator2, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}&#13;
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)&#13;
+io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)&#13;
+io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)&#13;
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)&#13;
+io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)&#13;
+io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)&#13;
+io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)&#13;
+io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)&#13;
+altashop@1.0-SNAPSHOT/test.automation.driver.AndroidDriverPool.create(AndroidDriverPool.java:30)&#13;
+altashop@1.0-SNAPSHOT/test.automation.pageobject.BasePageObject.getDriver(BasePageObject.java:20)&#13;
+altashop@1.0-SNAPSHOT/test.automation.pageobject.BasePageObject.onWait(BasePageObject.java:26)&#13;
+altashop@1.0-SNAPSHOT/test.automation.pageobject.BasePageObject.waitUntilVisible(BasePageObject.java:38)&#13;
+altashop@1.0-SNAPSHOT/starter.screen.LoginScreen.onHomepageAltaShop(LoginScreen.java:40)&#13;
+altashop@1.0-SNAPSHOT/starter.stepdefinitions.LoginSteps.userOnHomepageAltaShopForLoginFeature(LoginSteps.java:27)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)&#13;
+io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)&#13;
+</system-err></testcase></testsuite>

@@ -45,7 +45,7 @@ public class RegisterSteps {
     }
 
     @And("user input email untuk register yang belum pernah terdaftar")
-    public void userInputEmailUntukRegisterYangBelumPernahTerdaftar() { register.inputEmail("jancok@gmail.com");
+    public void userInputEmailUntukRegisterYangBelumPernahTerdaftar() { register.inputEmail("jancok1@gmail.com");
     }
 
     @And("user berada di halaman login")

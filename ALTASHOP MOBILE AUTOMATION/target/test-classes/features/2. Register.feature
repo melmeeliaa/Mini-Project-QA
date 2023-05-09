@@ -1,6 +1,6 @@
 Feature: Register
 
-  @AS40-negative
+  @register-mobile-01
   Scenario: user tidak dapat register karena menggunakan email yang sudah terdaftar
     Given user on homepage AltaShop for register feature
     When user click login button for register feature
@@ -9,9 +9,9 @@ Feature: Register
     And user input registered email for register feature
     And user input password for register feature
     Then user click register button for register feature
-    And user see error message duplicate email "duplicate key value"
+    And user see error message duplicate email "Gagal:("
 
-  @AS41-negative
+  @register-mobile-02
   Scenario: user tidak dapat register karena tidak mengisi field nama lengkap
     Given user on homepage AltaShop for register feature
     When user click login button for register feature
@@ -22,7 +22,7 @@ Feature: Register
     Then user click register button for register feature
     And user see error message fullname is required or can not empty
 
-  @AS42-negative
+  @register-mobile-03
   Scenario: user tidak dapat register karena tidak mengisi field nama email
     Given user on homepage AltaShop for register feature
     When user click login button for register feature
@@ -33,7 +33,7 @@ Feature: Register
     Then user click register button for register feature
     And user see error message email is required or can not empty
 
-  @AS43-negative
+  @register-mobile-04
   Scenario: user tidak dapat register karena tidak mengisi field password
     Given user on homepage AltaShop for register feature
     When user click login button for register feature
@@ -44,7 +44,7 @@ Feature: Register
     Then user click register button for register feature
     And user see error message password is required or can not empty
 
-  @AS44-positive
+  @register-mobile-05
   Scenario: user dapat register karena semua field terisi dan data yang valid
     Given user on homepage AltaShop for register feature
     When user click login button for register feature

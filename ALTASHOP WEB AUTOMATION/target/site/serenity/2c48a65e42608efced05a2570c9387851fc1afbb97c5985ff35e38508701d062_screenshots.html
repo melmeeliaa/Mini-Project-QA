@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 06-05-2023 19:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 08-05-2023 10:03</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">user bisa melihat riwayat transaksi
+                                <span class="failing-color">user bisa melihat riwayat transaksi
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -211,24 +211,63 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.TransaksiPage.klikRiwayatTransaksi(TransaksiPage.java:126)<br />starter.stepdefinitions.TransaksiSteps.userKlikTransaksi(TransaksiSteps.java:60)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: /html/body/div[1]/div[2]/div/div[1] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>starter.pages.TransaksiPage.klikRiwayatTransaksi(TransaksiPage.java :126)<br />starter.stepdefinitions.TransaksiSteps.userKlikTransaksi(TransaksiSteps.java :60)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :85)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java :129)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java :23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java :129)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java :137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :59)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource5600018994375984744.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="a9beb815630c09d22211b3d676a87fcd2940b70b1df8345cbcf716cff5f9fa8c.png" title=" Given user berada di Homepage AltaShop dan login akun" width="1366"/>
-                <img src="a9beb815630c09d22211b3d676a87fcd2940b70b1df8345cbcf716cff5f9fa8c.png" title=" Di homepage alta shop" width="1366"/>
-                <img src="77943f4ac6e853126bc65a4f7829db2c6a8d40220bd0d09ce052e0a0886df26d.png" title=" Klik button login" width="1366"/>
-                <img src="c658029782baef7eda31d453f8830328b4d912483ebfd6931f63a58edb49cbc8.png" title=" Input email: ERA@gmail.com" width="1366"/>
-                <img src="c5d23664d294bc0b05fe8cc4b9b546a19df2a6d9cfc709732fd72375bcab7270.png" title=" Input password: Ina" width="1366"/>
-                <img src="96b7ac4b477347804424816fa3116f6bbf4ee0657356f81a356ec3bb7f47ec4a.png" title=" Klik button login kedua" width="1366"/>
-                <img src="96b7ac4b477347804424816fa3116f6bbf4ee0657356f81a356ec3bb7f47ec4a.png" title=" Given user berada di Homepage AltaShop dan login akun (completed)" width="1366"/>
-                <img src="0b7082b21b772882ba8b0ef5b8b9f8269661e4a53cce4667c4b3b1831016bb08.png" title=" When user klik logo user" width="1366"/>
-                <img src="0b7082b21b772882ba8b0ef5b8b9f8269661e4a53cce4667c4b3b1831016bb08.png" title=" Klik logo user" width="1366"/>
-                <img src="0b7082b21b772882ba8b0ef5b8b9f8269661e4a53cce4667c4b3b1831016bb08.png" title=" When user klik logo user (completed)" width="1366"/>
-                <img src="04153e5ec108ae7ce7ab5fbf38d9fc7f0f9ed9e4689bc721b135285a9b4ecb29.png" title=" And user klik transaksi" width="1366"/>
-                <img src="04153e5ec108ae7ce7ab5fbf38d9fc7f0f9ed9e4689bc721b135285a9b4ecb29.png" title=" Klik riwayat transaksi" width="1366"/>
-                <img src="04153e5ec108ae7ce7ab5fbf38d9fc7f0f9ed9e4689bc721b135285a9b4ecb29.png" title=" And user klik transaksi (completed)" width="1366"/>
-                <img src="cd16a1e8b95f50b7293aa9136bcb41b0d2db6674d344bb27f9d3f685d3785601.png" title=" And user dibawa ke halaman transaksi" width="1366"/>
-                <img src="cd16a1e8b95f50b7293aa9136bcb41b0d2db6674d344bb27f9d3f685d3785601.png" title=" Halaman transaksi" width="1366"/>
-                <img src="cd16a1e8b95f50b7293aa9136bcb41b0d2db6674d344bb27f9d3f685d3785601.png" title=" And user dibawa ke halaman transaksi (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="f5192530e05cb404d28257d53fcda2caea810e87ea3a99aca8c746b4c525f8f1.png" title=" Given user berada di Homepage AltaShop dan login akun" width="1366"/>
+                <img src="f5192530e05cb404d28257d53fcda2caea810e87ea3a99aca8c746b4c525f8f1.png" title=" Di homepage alta shop" width="1366"/>
+                <img src="f035198f28bcaf95684f4b1a3b9e5d031fc0873bb044f55c4913aef571773aa0.png" title=" Klik button login" width="1366"/>
+                <img src="ff50e67ed9ed40e72fb397fc7a09bfe209c3f680fb3b696510ea6780568d1463.png" title=" Input email: ERA@gmail.com" width="1366"/>
+                <img src="f8ed82fd55bdf8d1eb82cbd12fedaef002ea832a2e7ce085b75000cb94eafdc7.png" title=" Input password: Ina" width="1366"/>
+                <img src="ac0746c10964bd85aa1bf485154f6facfe75ef2baef4f978359e106db757408f.png" title=" Klik button login kedua" width="1366"/>
+                <img src="ac0746c10964bd85aa1bf485154f6facfe75ef2baef4f978359e106db757408f.png" title=" Given user berada di Homepage AltaShop dan login akun (completed)" width="1366"/>
+                <img src="e18e88abda9e57923d16dfe409042d2b29a664887c9ec394a76dbd726635ded8.png" title=" When user klik logo user" width="1366"/>
+                <img src="e18e88abda9e57923d16dfe409042d2b29a664887c9ec394a76dbd726635ded8.png" title=" Klik logo user" width="1366"/>
+                <img src="e18e88abda9e57923d16dfe409042d2b29a664887c9ec394a76dbd726635ded8.png" title=" When user klik logo user (completed)" width="1366"/>
+                <img src="99e46a70f6807f41b7dcd36579c13969f008f58b2b48214f0f5f78f5db086e52.png" title=" And user klik transaksi" width="1366"/>
+                <img src="99e46a70f6807f41b7dcd36579c13969f008f58b2b48214f0f5f78f5db086e52.png" title=" Klik riwayat transaksi: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

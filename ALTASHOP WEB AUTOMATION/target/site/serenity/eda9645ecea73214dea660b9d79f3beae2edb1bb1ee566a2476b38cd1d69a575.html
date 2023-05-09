@@ -153,7 +153,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [];
+            var requirementsTree = [{"text":"login","type":"feature","href":"eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e6 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -224,7 +224,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated </span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 08-05-2023 10:01</span>
     <br style="clear:left"/>
 </div>
 
@@ -278,85 +278,461 @@
                                                 <h3>Feature Coverage By Scenario</h3>
 
                                                 <!-- REQUIREMENTS PIE CHART -->
+                                                    <div class="chart-container" style="position: relative; width:30vw">
+                                                        <canvas id="requirementChart" width="300" height="300"></canvas>
+                                                    </div>
 
                                             </div>
                                             <div class="col-sm-8">
-                                                <h3>Requirements Overview</h3>
+                                                <!--- TOC --->
+                                                <div id="toc">
+                                                    <h3>Overview</h3>
+                                                    <table class="table" id="toc-table">
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#ee849c56286995cd84dc36a7cb9649aa482b0568d69e24a2ba2a938a21ac4eec"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: user tidak bisa login karena akunnya belum terdaftar
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
 
-                                                <div id="tree"></div>
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="5e1ad3bbb78344a4a915535223600072cb3b92eaa9b7596799bd90e00cb141fa.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
 
-                                                <!-- STATS -->
-                                                <div>
-                                                    <h3><i class="bi bi-speedometer2"></i> Key Statistics</h3>
-                                                    <div>
-                                                        <table class="table table-striped table-hover">
-                                                            <tbody>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-card-checklist"></i> Number of Scenarios
-                                                                </td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-caret-right"></i> Number of Test Cases
-                                                                </td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-flag-fill"></i> Tests Started
-                                                                </td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-stop-circle"></i> Tests
-                                                                    Finished
-                                                                </td>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-stopwatch"></i> Total
-                                                                    Duration
-                                                                </td>
-                                                                <td>0ms</td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-trophy"></i> Fastest Test
-                                                                </td>
-                                                                <td>0ms</td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-skip-start"></i> Slowest
-                                                                    Test
-                                                                </td>
-                                                                <td>0ms</td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-stopwatch"></i> Average
-                                                                    Execution Time
-                                                                </td>
-                                                                <td>0ms</td>
-                                                            </tr>
-                                                            <tr scope="row">
-                                                                <td>
-                                                                    <i class="bi bi-stopwatch-fill"></i> Total
-                                                                    Execution Time
-                                                                </td>
-                                                                <td>0ms</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="5e1ad3bbb78344a4a915535223600072cb3b92eaa9b7596799bd90e00cb141fa.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#1ff42b4bd094d6c4ea85f5d64e22851d1c6aa2885ebaccd46819f3127860ed99"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: user bisa login dengan data valid
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="8e21d81dedbbc0c9b9615d56906b2764bfd8fc273590e7f8cce500ec45339f72.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="8e21d81dedbbc0c9b9615d56906b2764bfd8fc273590e7f8cce500ec45339f72.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#19869ea6b7579671b1967313d72bca099b091b470c97258d97b3dd9f15f868f2"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: user tidak bisa login karena menggunakan password yang salah
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="e7154b0700d160b0b89ad72ad3a592eef3d4f6776e249e6766b10b6a1ef250d9.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="e7154b0700d160b0b89ad72ad3a592eef3d4f6776e249e6766b10b6a1ef250d9.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#aed78309975b2cdf36d80f9e5ddf067a19fd74aa3453e3dfd157e078d7cdf4a3"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: user tidak bisa login karena menggunakan email yang salah
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="459aa919849c718181a4fd5913096e3043871a2375b83a05e5a1462d906ae74a.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="459aa919849c718181a4fd5913096e3043871a2375b83a05e5a1462d906ae74a.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#dc4a8952aedc3eb80a3a59afefb4d74618014695037996bb151b8d5c01d76b7f"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: user tidak bisa login karena tidak mengisi email
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="f65e491a3d7f5a13b8f2604088ca24ccd5daa9a494fbe3278bab80ad327bd2aa.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="f65e491a3d7f5a13b8f2604088ca24ccd5daa9a494fbe3278bab80ad327bd2aa.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:95%;" class="toc-title">
+                                                                            <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#9b69ddf6b81a743f74e52755f1385978bbe95f9b7f6cdf54b42997d9f83964aa"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario: user tidak bisa login karena tidak mengisi password
+                                                                                    </a>
+                                                                                </span>
+                                                                        </td>
+                                                                        <td>
+
+                                                                        </td>
+                                                                        <td style="width:5%;">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td class="icons-bar">
+                                                                                        <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                           href="4618e3bc308443ca682c5caa86389b9b0eec607fea2494f290d19e77eea6e346.html"
+                                                                                           title="View test results">
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                                            </a>
+
+
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="4618e3bc308443ca682c5caa86389b9b0eec607fea2494f290d19e77eea6e346.html"
+                                                                                               title="View test results">
+                                                                                                <i class="bi bi-eyeglasses"></i>
+                                                                                            </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                    </table>
                                                 </div>
-                                                <!-- END STATS -->
+                                                <!--- END OF TOC --->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h3>Scenarios</h3>
+
+                                                    <a name="c7179067-f93a-4b39-91db-d628935c5190"></a>
+                                                    <p class="rule-tags inline-tag">
+                                                    </p>
 
 
+                                                        <div class="scenario-docs card" id="ee849c56286995cd84dc36a7cb9649aa482b0568d69e24a2ba2a938a21ac4eec">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="5e1ad3bbb78344a4a915535223600072cb3b92eaa9b7596799bd90e00cb141fa.html"
+                                                                               title="View test results">Scenario: user tidak bisa login karena akunnya belum terdaftar</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge"
+                                                                                      style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink"
+                                                                                       style="background:default;"
+                                                                                       href="7dc5b5bd78e879ec7d0c420f2df80d8855c43173f010bfd356e68bfba36fc827.html">AS01-negative (tag)</a>
+                                                                                </span>
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p>Given user berada di Homepage AltaShop</p>
+                                                                    <p>When user klik button login</p>
+                                                                    <p>And user input email</p>
+                                                                    <p>And user input password</p>
+                                                                    <p>Then user klik button login yang kedua</p>
+                                                                    <p>And user menerima error message &quot;record not found&quot;</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scenario-docs card" id="1ff42b4bd094d6c4ea85f5d64e22851d1c6aa2885ebaccd46819f3127860ed99">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="8e21d81dedbbc0c9b9615d56906b2764bfd8fc273590e7f8cce500ec45339f72.html"
+                                                                               title="View test results">Scenario: user bisa login dengan data valid</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge"
+                                                                                      style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink"
+                                                                                       style="background:default;"
+                                                                                       href="47c86198643e7479c25ed2ffb27012304636e6f5844a2d1a655b528426075eb6.html">AS02-positive (tag)</a>
+                                                                                </span>
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p>Given user berada di Homepage AltaShop</p>
+                                                                    <p>When user klik button login</p>
+                                                                    <p>And user input email valid</p>
+                                                                    <p>And user input password valid</p>
+                                                                    <p>Then user klik button login yang kedua</p>
+                                                                    <p>And user kembali di homepage AltaShop</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scenario-docs card" id="19869ea6b7579671b1967313d72bca099b091b470c97258d97b3dd9f15f868f2">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="e7154b0700d160b0b89ad72ad3a592eef3d4f6776e249e6766b10b6a1ef250d9.html"
+                                                                               title="View test results">Scenario: user tidak bisa login karena menggunakan password yang salah</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge"
+                                                                                      style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink"
+                                                                                       style="background:default;"
+                                                                                       href="fc8f86c5d6d29c364574511182512a6050ae0a833b704fb215a0b6780df8d0d0.html">AS03-negative (tag)</a>
+                                                                                </span>
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p>Given user berada di Homepage AltaShop</p>
+                                                                    <p>When user klik button login</p>
+                                                                    <p>And user input email valid</p>
+                                                                    <p>And user input password invalid</p>
+                                                                    <p>Then user klik button login yang kedua</p>
+                                                                    <p>And user menerima error message &quot;email or password is invalid&quot;</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scenario-docs card" id="aed78309975b2cdf36d80f9e5ddf067a19fd74aa3453e3dfd157e078d7cdf4a3">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="459aa919849c718181a4fd5913096e3043871a2375b83a05e5a1462d906ae74a.html"
+                                                                               title="View test results">Scenario: user tidak bisa login karena menggunakan email yang salah</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge"
+                                                                                      style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink"
+                                                                                       style="background:default;"
+                                                                                       href="9783579440dff9aa5dd5b39eb2c0e5301c17b6f7908b94dffdda13fb45961cb5.html">AS04-negative (tag)</a>
+                                                                                </span>
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p>Given user berada di Homepage AltaShop</p>
+                                                                    <p>When user klik button login</p>
+                                                                    <p>And user input email invalid</p>
+                                                                    <p>And user input password valid</p>
+                                                                    <p>Then user klik button login yang kedua</p>
+                                                                    <p>And user menerima error message &quot;email or password is invalid&quot;</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scenario-docs card" id="dc4a8952aedc3eb80a3a59afefb4d74618014695037996bb151b8d5c01d76b7f">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="f65e491a3d7f5a13b8f2604088ca24ccd5daa9a494fbe3278bab80ad327bd2aa.html"
+                                                                               title="View test results">Scenario: user tidak bisa login karena tidak mengisi email</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge"
+                                                                                      style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink"
+                                                                                       style="background:default;"
+                                                                                       href="a06df21132161e347ab47127311871371e0d3abe7244fd75f5a1cdb20f00b85e.html">AS05-negative (tag)</a>
+                                                                                </span>
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p>Given user berada di Homepage AltaShop</p>
+                                                                    <p>When user klik button login</p>
+                                                                    <p>And user not input email</p>
+                                                                    <p>And user input password valid</p>
+                                                                    <p>Then user klik button login yang kedua</p>
+                                                                    <p>And user menerima error message &quot;email is required&quot;</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="scenario-docs card" id="9b69ddf6b81a743f74e52755f1385978bbe95f9b7f6cdf54b42997d9f83964aa">
+                                                            <div class="scenario-docs card-header success"
+                                                                 style="min-height:1.5em;">
+                                                                <div>
+                                                                        <span class="scenario-heading">
+                                                                            <a href="4618e3bc308443ca682c5caa86389b9b0eec607fea2494f290d19e77eea6e346.html"
+                                                                               title="View test results">Scenario: user tidak bisa login karena tidak mengisi password</a>
+                                                                        </span>
+
+                                                                        <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge"
+                                                                                      style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink"
+                                                                                       style="background:default;"
+                                                                                       href="6242c35b97b14117d404195d7d85e26178b104a3930b828a4c06ac6410167350.html">AS06-negative (tag)</a>
+                                                                                </span>
+                                                                        </span>
+
+                                                                    <span class="scenario-result-icon">
+                                                                    
+
+                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="scenario-docs card-body">
+                                                                    <p>Given user berada di Homepage AltaShop</p>
+                                                                    <p>When user klik button login</p>
+                                                                    <p>And user input email valid</p>
+                                                                    <p>And user not input password</p>
+                                                                    <p>Then user klik button login yang kedua</p>
+                                                                    <p>And user menerima error message &quot;password is required&quot;</p>
+                                                                <div class="examples">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                             </div>
                                         </div>
                                     </div>
@@ -368,6 +744,9 @@
                                             <div class="col-sm-4">
                                                 <h3>Feature Coverage By Scenario</h3>
                                                 <!-- TEST RESULT PIE CHART -->
+                                                    <div class="chart-container" style="position: relative; width:30vw">
+                                                        <canvas id="resultChart" width="300" height="300"></canvas>
+                                                    </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <h4><i class="bi bi-check-square"></i> Test Outcomes</h4>
@@ -404,88 +783,88 @@
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                                <tr class="scenario-result UNDEFINED">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">login</a>
                                                                     </td>
                                                                     <td>
-                                                                        <a href="">user tidak bisa login karena akunnya belum terdaftar</a>
+                                                                        <a href="5e1ad3bbb78344a4a915535223600072cb3b92eaa9b7596799bd90e00cb141fa.html">user tidak bisa login karena akunnya belum terdaftar</a>
                                                                     </td>
                                                                     <td>6</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span
-                                                                                style="display:none">UNDEFINED</span>
+                                                                    <td>10:01:09</td>
+                                                                    <td>32s 562ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result UNDEFINED">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">login</a>
                                                                     </td>
                                                                     <td>
-                                                                        <a href="">user bisa login dengan data valid</a>
+                                                                        <a href="8e21d81dedbbc0c9b9615d56906b2764bfd8fc273590e7f8cce500ec45339f72.html">user bisa login dengan data valid</a>
                                                                     </td>
                                                                     <td>6</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span
-                                                                                style="display:none">UNDEFINED</span>
+                                                                    <td>10:01:42</td>
+                                                                    <td>10s 730ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result UNDEFINED">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">login</a>
                                                                     </td>
                                                                     <td>
-                                                                        <a href="">user tidak bisa login karena menggunakan password yang salah</a>
+                                                                        <a href="e7154b0700d160b0b89ad72ad3a592eef3d4f6776e249e6766b10b6a1ef250d9.html">user tidak bisa login karena menggunakan password yang salah</a>
                                                                     </td>
                                                                     <td>6</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span
-                                                                                style="display:none">UNDEFINED</span>
+                                                                    <td>10:01:53</td>
+                                                                    <td>9s 659ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result UNDEFINED">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">login</a>
                                                                     </td>
                                                                     <td>
-                                                                        <a href="">user tidak bisa login karena menggunakan email yang salah</a>
+                                                                        <a href="459aa919849c718181a4fd5913096e3043871a2375b83a05e5a1462d906ae74a.html">user tidak bisa login karena menggunakan email yang salah</a>
                                                                     </td>
                                                                     <td>6</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span
-                                                                                style="display:none">UNDEFINED</span>
+                                                                    <td>10:02:03</td>
+                                                                    <td>9s 287ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result UNDEFINED">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">login</a>
                                                                     </td>
                                                                     <td>
-                                                                        <a href="">user tidak bisa login karena tidak mengisi email</a>
+                                                                        <a href="f65e491a3d7f5a13b8f2604088ca24ccd5daa9a494fbe3278bab80ad327bd2aa.html">user tidak bisa login karena tidak mengisi email</a>
                                                                     </td>
                                                                     <td>6</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span
-                                                                                style="display:none">UNDEFINED</span>
+                                                                    <td>10:02:13</td>
+                                                                    <td>9s 207ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
-                                                                <tr class="scenario-result UNDEFINED">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">login</a>
                                                                     </td>
                                                                     <td>
-                                                                        <a href="">user tidak bisa login karena tidak mengisi password</a>
+                                                                        <a href="4618e3bc308443ca682c5caa86389b9b0eec607fea2494f290d19e77eea6e346.html">user tidak bisa login karena tidak mengisi password</a>
                                                                     </td>
                                                                     <td>6</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td><i class='bi bi-pause-circle undefined-icon ' title='No test has been implemented yet'></i> <span
-                                                                                style="display:none">UNDEFINED</span>
+                                                                    <td>10:02:22</td>
+                                                                    <td>9s 050ms</td>
+                                                                    <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
                                                         </tbody>
@@ -503,6 +882,47 @@
                                             </div>
                                         </div>
 
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="6242c35b97b14117d404195d7d85e26178b104a3930b828a4c06ac6410167350.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> AS06-Negative&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="fc8f86c5d6d29c364574511182512a6050ae0a833b704fb215a0b6780df8d0d0.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> AS03-Negative&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="9783579440dff9aa5dd5b39eb2c0e5301c17b6f7908b94dffdda13fb45961cb5.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> AS04-Negative&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="47c86198643e7479c25ed2ffb27012304636e6f5844a2d1a655b528426075eb6.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> AS02-Positive&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="a06df21132161e347ab47127311871371e0d3abe7244fd75f5a1cdb20f00b85e.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> AS05-Negative&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="7dc5b5bd78e879ec7d0c420f2df80d8855c43173f010bfd356e68bfba36fc827.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> AS01-Negative&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                     </div>
                                 </div>
                             </div>
@@ -543,7 +963,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 6}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -594,7 +1014,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -638,7 +1058,7 @@
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 6}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -689,7 +1109,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -734,7 +1154,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,0,0,0],
+                    data: [6,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -817,7 +1237,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','0','0','0','0','0','0','0'],
+                data: ['0','4','1','1','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

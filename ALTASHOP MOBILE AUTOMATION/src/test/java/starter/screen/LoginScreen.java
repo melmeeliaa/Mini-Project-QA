@@ -23,7 +23,7 @@ public class LoginScreen extends BasePageObject {
     }
 
     private By errorMessage() {
-        return AppiumBy.xpath("//android.view.View[@content-desc=\"Record not found.\"]");
+        return AppiumBy.xpath("//android.view.View[@content-desc=\"Email atau password tidak valid.\"]");
     }
     private By errorMessageSecond() {
         return AppiumBy.xpath("//android.view.View[@content-desc=\"Email atau password tidak valid.\"]");

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"login","user bisa login menggunakan data valid","SUCCESS","2023-05-09T22:18:04.029186+07:00[Asia/Jakarta]","0.0","17.03"
+"login","user tidak bisa login karena menggunakan password yang salah","SUCCESS","2023-05-09T22:18:21.0822901+07:00[Asia/Jakarta]","0.0","17.9"
+"login","user tidak bisa login karena menggunakan email yang salah","SUCCESS","2023-05-09T22:18:39.0010536+07:00[Asia/Jakarta]","0.0","17.24"
+"login","user tidak bisa login karena tidak menginput email di field email","SUCCESS","2023-05-09T22:18:56.2606526+07:00[Asia/Jakarta]","0.0","15.88"
+"login","user tidak bisa login karena tidak menginput password di field password","ERROR","2023-05-09T22:19:12.1638956+07:00[Asia/Jakarta]","0.0","29.97"

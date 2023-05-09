@@ -1,4 +1,97 @@
 -------------------------------------------------------------------------------
 Test set: starter.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 178.798 s - in starter.CucumberTestSuite
+Tests run: 85, Failures: 0, Errors: 9, Skipped: 13, Time elapsed: 272.024 s <<< FAILURE! - in starter.CucumberTestSuite
+user tidak bisa login karena tidak menginput password di field password.user on homepage AltaShop for login feature  Time elapsed: 29.851 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.example.frontend_mobile' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.example.frontend_mobile.MainActivity' or 'com.example.frontend_mobile.com.example.frontend_mobile.MainActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting 
+Host info: host: 'LAPTOP-3SCUQ2RD', ip: '192.168.1.9'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=C:\Users\HP\Downloads\Mini-Project-QA\ALTASHOP MOBILE AUTOMATION\app/app-release.apk, appium:automationName=UiAutomator2, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}
+
+login.user tidak bisa login karena tidak menginput password di field password  Time elapsed: 0.013 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.example.frontend_mobile' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.example.frontend_mobile.MainActivity' or 'com.example.frontend_mobile.com.example.frontend_mobile.MainActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting 
+Host info: host: 'LAPTOP-3SCUQ2RD', ip: '192.168.1.9'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=C:\Users\HP\Downloads\Mini-Project-QA\ALTASHOP MOBILE AUTOMATION\app/app-release.apk, appium:automationName=UiAutomator2, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}
+
+login.user tidak bisa login karena tidak menginput password di field password  Time elapsed: 0.137 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.example.frontend_mobile' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.example.frontend_mobile.MainActivity' or 'com.example.frontend_mobile.com.example.frontend_mobile.MainActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting 
+Host info: host: 'LAPTOP-3SCUQ2RD', ip: '192.168.1.9'
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=C:\Users\HP\Downloads\Mini-Project-QA\ALTASHOP MOBILE AUTOMATION\app/app-release.apk, appium:automationName=UiAutomator2, platformName=ANDROID, appium:platformVersion=13.0}], desiredCapabilities=Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}}]
+Capabilities {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}
+
+user tidak dapat register karena menggunakan email yang sudah terdaftar.user input registered email for register feature  Time elapsed: 5.862 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+The element 'By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]' does not exist in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [07a1ddc0-3053-43b1-9710-623c73f63d7c, clickElement {id=00000000-0000-069b-0000-003100000003}]
+Capabilities {appium:app: C:\Users\HP\Downloads\Mini-..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (07a1ddc0-3053-43b1-9710-623c73f63d7c)] -> xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]]
+Session ID: 07a1ddc0-3053-43b1-9710-623c73f63d7c
+
+Register.user tidak dapat register karena menggunakan email yang sudah terdaftar  Time elapsed: 0.016 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+The element 'By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]' does not exist in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [07a1ddc0-3053-43b1-9710-623c73f63d7c, clickElement {id=00000000-0000-069b-0000-003100000003}]
+Capabilities {appium:app: C:\Users\HP\Downloads\Mini-..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (07a1ddc0-3053-43b1-9710-623c73f63d7c)] -> xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]]
+Session ID: 07a1ddc0-3053-43b1-9710-623c73f63d7c
+
+Register.user tidak dapat register karena menggunakan email yang sudah terdaftar  Time elapsed: 0.023 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+The element 'By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]' does not exist in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [07a1ddc0-3053-43b1-9710-623c73f63d7c, clickElement {id=00000000-0000-069b-0000-003100000003}]
+Capabilities {appium:app: C:\Users\HP\Downloads\Mini-..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (07a1ddc0-3053-43b1-9710-623c73f63d7c)] -> xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]]
+Session ID: 07a1ddc0-3053-43b1-9710-623c73f63d7c
+
+user tidak dapat register karena tidak mengisi field nama lengkap.user click link register for register feature  Time elapsed: 15.199 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.Button[@content-desc="Register"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\HP\Downloads\Mini-..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2745d7a4-0a6f-4a52-9197-78cc3e620ed2
+
+Register.user tidak dapat register karena tidak mengisi field nama lengkap  Time elapsed: 0.01 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.Button[@content-desc="Register"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\HP\Downloads\Mini-..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2745d7a4-0a6f-4a52-9197-78cc3e620ed2
+
+Register.user tidak dapat register karena tidak mengisi field nama lengkap  Time elapsed: 0.019 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.Button[@content-desc="Register"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\HP\Downloads\Mini-..., appium:appPackage: com.example.frontend_mobile, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\HP\Downloads\Mini-..., automationName: UiAutomator2, platformName: ANDROID, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 2745d7a4-0a6f-4a52-9197-78cc3e620ed2
+
