@@ -22,7 +22,7 @@ public class TransaksiPage extends PageObject {
         return By.xpath("//button[@class='v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary']");
     }
     private By ButtonBeli(){
-        return By.xpath("/html/body/div/div/main/div/div/div[2]/div/div[2]/div/div[3]/div[2]/button[2]/span");
+        return By.xpath("/html/body/div/div/main/div/div/div[2]/div/div[1]/div/div[3]/div[2]/button[2]");
     }
 
     private By ButtonCart() {
@@ -34,18 +34,9 @@ public class TransaksiPage extends PageObject {
     private By Transaksi() {
         return By.xpath("//*[@id=\"app\"]/div[1]/main/div/div/div");
     }
-    private By FieldCategories() {
-        return By.xpath("//*[@id=\"app\"]/div[1]/main/div/div/div[1]/div/div[1]/div[1]/div[1]");
-    }
-    private By selectCategories() {
-        return By.xpath("/html/body/div[1]/div[1]/main/div/div/div[1]");
-    }
 
-    private By productCategories() {
-        return By.xpath("/html/body/div[1]/div[2]/div/div[1]/div/div");
-    }
     private By logoUser() {
-        return By.xpath("//*[@id=\"app\"]/div[1]/header/div/button[2]");
+        return By.xpath("/html/body/div/div[1]/header/div/button[2]/span/i");
     }
     private By riwayatTransaksi() {
         return By.xpath("/html/body/div[1]/div[2]/div/div[1]");
@@ -105,18 +96,7 @@ public class TransaksiPage extends PageObject {
     public void halamanTransaksi() {
         $(Transaksi()).isPresent();
     }
-    @Step
-    public void klikFieldCategories() {
-        $(FieldCategories()).click();
-    }
-    @Step
-    public void klikSelectCategories() {
-        $(selectCategories()).click();
-    }
-    @Step
-    public void munculprodukcategories() {
-        $(productCategories()).isPresent();
-    }
+
     @Step
     public void klikLogoUser() {
         $(logoUser()).click();

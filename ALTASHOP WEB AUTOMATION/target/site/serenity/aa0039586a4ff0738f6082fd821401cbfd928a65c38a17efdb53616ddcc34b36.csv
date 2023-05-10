@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Transaksi","user bisa Mengubah Jumlah Produk pada Keranjang Belanja","FAILURE","2023-05-10T00:51:41.5752982+07:00[Asia/Jakarta]","0.0","9.29"
+"Transaksi","user bisa melihat riwayat transaksi","SUCCESS","2023-05-10T15:27:37.0211854+07:00[Asia/Jakarta]","0.0","8.48"
+"Transaksi","user bisa menghapus produk dari keranjang belanja","SUCCESS","2023-05-10T15:27:57.0475671+07:00[Asia/Jakarta]","0.0","9.97"

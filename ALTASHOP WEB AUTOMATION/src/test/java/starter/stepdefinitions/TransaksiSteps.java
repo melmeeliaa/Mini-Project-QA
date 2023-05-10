@@ -39,19 +39,8 @@ public class TransaksiSteps {
     @And("user masuk ke halaman transaksi")
     public void userMasukKeHalamanTransaksi() { bayar.halamanTransaksi();
     }
-    //================================================ AS16 =================================================
-    @When("user klik select categories")
-    public void userKlikSelectCategories() { bayar.klikFieldCategories();
-    }
 
-    @And("user memilih salah satu categories")
-    public void userMemilihSalahSatuCategories() { bayar.klikSelectCategories();
-    }
-
-    @And("Produk yang dicari pada categori tersebut muncul di hasil pencarian")
-    public void produkYangDicariPadaCategoriTersebutMunculDiHasilPencarian() { bayar.munculprodukcategories();
-    }
-    //=========================================== AS17 ================================================
+    //=========================================== ================================================
     @When("user klik logo user")
     public void userKlikLogoUser() { bayar.klikLogoUser();
     }
@@ -67,7 +56,10 @@ public class TransaksiSteps {
     @Then("user klik tombol tambah")
     public void userKlikTombolTambah() { bayar.klikTombolTambah();
     }
-    //=============================================== AS19 =====================================================
+    //=============================================== =====================================================
+    @When("user berada di homepage lalu klik beli salah satu produk")
+    public void userBeradaDiHomepageLaluKlikBeliSalahSatuProduk() { bayar.diHomepageKembali(); bayar.klikButtonBeli();
+    }
     @Then("user klik tombol minus")
     public void userKlikTombolMinus() { bayar.klikTombolMinus();
     }
@@ -76,4 +68,6 @@ public class TransaksiSteps {
     @And("muncul alert message pesanan kosong")
     public void munculAlertMessagePesananKosong() { bayar.munculPesananKosong();
     }
+
+
 }

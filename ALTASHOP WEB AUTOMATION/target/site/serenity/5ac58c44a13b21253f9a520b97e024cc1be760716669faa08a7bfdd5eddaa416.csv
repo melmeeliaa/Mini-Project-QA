@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"register","user tidak bisa register karena nama email sudah terdaftar","SUCCESS","2023-05-10T00:50:04.815643+07:00[Asia/Jakarta]","0.0","10.41"
-"register","user bisa register","SUCCESS","2023-05-10T00:50:41.5198541+07:00[Asia/Jakarta]","0.0","10.51"

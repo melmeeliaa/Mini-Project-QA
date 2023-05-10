@@ -1,7 +1,7 @@
 Feature: login
 
 
-  @AS01-negative
+  @Login01-Web-Negative
   Scenario: user tidak bisa login karena akunnya belum terdaftar
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -10,7 +10,7 @@ Feature: login
     Then user klik button login yang kedua
     And user menerima error message "record not found"
 
-  @AS02-positive
+  @Login02-Web-Positive
   Scenario: user bisa login dengan data valid
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -19,7 +19,7 @@ Feature: login
     Then user klik button login yang kedua
     And user kembali di homepage AltaShop
 
-  @AS03-negative
+  @Login03-Web-Negative
   Scenario: user tidak bisa login karena menggunakan password yang salah
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -28,7 +28,7 @@ Feature: login
     Then user klik button login yang kedua
     And user menerima error message "email or password is invalid"
 
-  @AS04-negative
+  @Login04-Web-Negative
   Scenario: user tidak bisa login karena menggunakan email yang salah
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -37,7 +37,7 @@ Feature: login
     Then user klik button login yang kedua
     And user menerima error message "email or password is invalid"
 
-  @AS05-negative
+  @Login05-Web-Negative
   Scenario: user tidak bisa login karena tidak mengisi email
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -46,7 +46,7 @@ Feature: login
     Then user klik button login yang kedua
     And user menerima error message "email is required"
 
-  @AS06-negative
+  @Login06-Web-Negative
   Scenario: user tidak bisa login karena tidak mengisi password
     Given user berada di Homepage AltaShop
     When user klik button login

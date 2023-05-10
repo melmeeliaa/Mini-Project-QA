@@ -1,27 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: starter.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 185.853 s <<< FAILURE! - in starter.CucumberTestSuite
-Transaksi.user bisa membayar produk yang diinginkan  Time elapsed: 15.475 s  <<< FAILURE!
-java.lang.AssertionError: Element should be visible
-
-Transaksi.user bisa melihat riwayat transaksi  Time elapsed: 17.424 s  <<< ERROR!
-net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: /html/body/div[1]/div[2]/div/div[1] to be enabled (tried for 5 second(s) with 100 milliseconds interval)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/div/div[1]"}
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Tests run: 15, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 142.293 s <<< FAILURE! - in starter.CucumberTestSuite
+Transaksi.user bisa membayar produk yang diinginkan  Time elapsed: 13.048 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=113.0.5672.92)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4974577a3f047554c2d0a36645d9e7da, findElement {using=xpath, value=/html/body/div[1]/div[2]/div/div[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60185/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4974577a3f047554c2d0a36645d9e7da
-
-Transaksi.user bisa Mengubah Jumlah Produk pada Keranjang Belanja  Time elapsed: 9.578 s  <<< FAILURE!
-java.lang.AssertionError: Element should be visible
-
-Transaksi.user bisa menghapus produk dari keranjang belanja  Time elapsed: 11.319 s  <<< FAILURE!
-java.lang.AssertionError: Element should be visible
+Command: [2aba82c3cbed94ac67766cb629b24f1a, isElementDisplayed {id=7F3107C72A6FE5DA8DF3C19A5A934A2D_element_22}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 113.0.5672.92, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58030/devtoo..., se:cdpVersion: 113.0.5672.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2aba82c3cbed94ac67766cb629b24f1a)] -> xpath: //*[@id="app"]/div[1]/main/div/div/div]
+Session ID: 2aba82c3cbed94ac67766cb629b24f1a
 

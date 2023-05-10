@@ -1,6 +1,6 @@
 Feature: register
 
-  @AS07-negative
+  @Register01-Web-Negative
   Scenario: user tidak bisa register karena nama email sudah terdaftar
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -11,7 +11,7 @@ Feature: register
     Then user klik register yang kedua
     And user menerima ERROR message "duplicate key value ..."
 
-  @AS08-negative
+  @Register02-Web-Negative
   Scenario: user tidak bisa register karena tidak input nama lengkap
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -22,7 +22,7 @@ Feature: register
     Then user klik register yang kedua
     And user menerima ERROR message "fullname is required"
 
-  @AS09-negative
+  @@Register03-Web-Negative
   Scenario: user tidak bisa register karena tidak input email
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -33,7 +33,7 @@ Feature: register
     Then user klik register yang kedua
     And user menerima ERROR message "email is required"
 
-  @AS10-negative
+  @@Register04-Web-Negative
   Scenario: user tidak bisa register karena tidak input password
     Given user berada di Homepage AltaShop
     When user klik button login
@@ -44,7 +44,7 @@ Feature: register
     Then user klik register yang kedua
     And user menerima ERROR message "password is required"
 
-  @AS11-positive
+  @@Register05-Web-Negative
   Scenario: user bisa register
     Given user berada di Homepage AltaShop
     When user klik button login
